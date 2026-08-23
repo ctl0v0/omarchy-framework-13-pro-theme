@@ -45,6 +45,15 @@ window border, translucent surfaces, and included wallpaper on Omarchy 4.
 
 ![Framework 13 Pro desktop with Files, themed terminal, and notification](screenshots/shell-surfaces.png)
 
+## Backgrounds
+
+### Modular Graphite
+
+The bundled default is original artwork that presents the theme's graphite,
+orange, lavender, and translucent-green palette without using Framework marks.
+
+![Modular Graphite default wallpaper on the Omarchy desktop](screenshots/default-wallpaper.png)
+
 ## Official Framework Wallpapers
 
 Framework publishes wallpaper packs at
