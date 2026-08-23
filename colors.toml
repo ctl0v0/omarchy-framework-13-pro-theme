@@ -1,0 +1,37 @@
+mode = "dark"
+
+# Graphite chassis with orange, lavender, and translucent-bezel accents.
+accent = "#ff7447"
+selection = "#3b364a"
+muted = "#6f6c84"
+
+background = "#050507"
+dark_background = "#030304"
+darker_background = "#000000"
+lighter_background = "#1a171d"
+
+foreground = "#e9ecf2"
+dark_foreground = "#8a8f99"
+light_foreground = "#c8c9dc"
+bright_foreground = "#ffffff"
+
+red = "#ff5f6d"
+# Translucent bezel green occupies ANSI yellow for warnings and highlights.
+yellow = "#89a976"
+orange = "#ff7447"
+# Keyboard lavender occupies ANSI green to avoid an unrelated hue.
+green = "#c8c8df"
+cyan = "#75d5c6"
+blue = "#6560f5"
+magenta = "#aaa8cf"
+brown = "#a56f52"
+
+bright_red = "#ff8791"
+bright_yellow = "#b1c7a6"
+bright_green = "#e3e3f0"
+bright_cyan = "#a0eadf"
+bright_blue = "#9692ff"
+bright_magenta = "#d5d3eb"
+
+hyprland_active_border = "rgba(ff7447ee) rgba(c8c8dfee) 45deg"
+hyprland_inactive_border = "rgba(6f6c8466)"
