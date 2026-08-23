@@ -45,20 +45,23 @@ window border, translucent surfaces, and included wallpaper on Omarchy 4.
 
 ![Framework 13 Pro desktop with Files, themed terminal, and notification](screenshots/shell-surfaces.png)
 
-## Backgrounds
-
-### Modular Graphite
-
-The bundled default is original artwork that presents the theme's graphite,
-orange, lavender, and translucent-green palette without using Framework marks.
-
-![Modular Graphite default wallpaper on the Omarchy desktop](screenshots/default-wallpaper.png)
-
 ## Official Framework Wallpapers
 
 Framework publishes wallpaper packs at
 [frame.work/wallpapers](https://frame.work/wallpapers). They are not bundled
 here because the downloads do not include an explicit redistribution license.
+
+Recommended official options:
+
+| Wallpaper | Official download | Theme fit |
+| --- | --- | --- |
+| `FW 13 Wallpaper Dark.jpg` | [Laptop 13 pack](https://downloads.frame.work/assets/framework-laptop13-wallpaper-pack.zip) | Dark, nature-like purple and graphite dunes |
+| `FW 13 Wallpaper Light.jpg` | [Laptop 13 pack](https://downloads.frame.work/assets/framework-laptop13-wallpaper-pack.zip) | Orange and lavender daylight dunes |
+| `FW 13 Pro Wallpaper 7.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Black code gear with orange details |
+| `FW 13 Pro Wallpaper 6.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Black floating gear and terminal hand |
+| `FW 13 Pro Wallpaper 4.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Orange terminal artwork |
+| `FW 16 Wallpaper 6.png` | [Laptop 16 pack](https://downloads.frame.work/assets/framework-laptop16-wallpaper-pack.zip) | Charcoal technical laptop drawing |
+| `FW12 Wallpaper Black.png` | [Legacy pack](https://downloads.frame.work/assets/framework-wallpaper-legacy-pack.zip) | Black hardware with orange accents |
 
 After downloading your preferred images, place them in:
 
@@ -67,9 +70,7 @@ After downloading your preferred images, place them in:
 ```
 
 They will be available alongside the included background the next time the
-theme is selected. Recommended matches include `FW 13 Wallpaper Dark.jpg`,
-`FW 13 Wallpaper Light.jpg`, `FW 13 Pro Wallpaper 7.png`, and
-`FW 16 Wallpaper 6.png`.
+theme is selected.
 
 ## Optional Personalization
 
