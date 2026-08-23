@@ -29,7 +29,7 @@ theme appears as `Framework 13 Pro`.
 - Orange-to-lavender active window border
 - Translucent Omarchy bar, menu, popup, notification, lock, and policy surfaces
 - Portable `Yaru-purple` file-manager icon selection
-- Original dark modular wallpaper and matching theme preview
+- Original dark modular wallpaper and real desktop preview
 
 Omarchy generates configurations for supported terminals, editors, browsers,
 Hyprland, and shell components from `colors.toml` when the theme is activated.
@@ -37,6 +37,13 @@ Hyprland, and shell components from `colors.toml` when the theme is activated.
 The ANSI yellow slot intentionally uses translucent-bezel green, while the ANSI
 green slot uses keyboard lavender. This preserves the product-inspired palette
 but differs from conventional terminal color naming.
+
+## Screenshots
+
+The main preview shows the generated terminal palette, Neovim colors, active
+window border, translucent surfaces, and included wallpaper on Omarchy 4.
+
+![Framework 13 Pro desktop with Files, themed terminal, and notification](screenshots/shell-surfaces.png)
 
 ## Official Framework Wallpapers
 
