@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if (( EUID != 0 )); then
+  printf 'Run this installer with sudo.\n' >&2
+  exit 1
+fi
+
+script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+theme_name="framework-13-pro-login"
+theme_source="$script_dir/theme"
+theme_target="/usr/local/share/sddm/themes/$theme_name"
+config_target="/etc/sddm.conf.d/99-z-framework-13-pro-login.conf"
+
+install -d -m 0755 "$theme_target"
+while IFS= read -r -d '' source_file; do
+  install -m 0644 "$source_file" "$theme_target/$(basename -- "$source_file")"
+done < <(find "$theme_source" -maxdepth 1 -type f -print0)
+
+install -d -m 0755 /etc/sddm.conf.d
+install -m 0644 "$script_dir/99-z-framework-13-pro-login.conf" "$config_target"
+
+printf 'Installed %s. It will appear after the next logout or reboot.\n' "$theme_name"

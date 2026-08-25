@@ -29,7 +29,9 @@ theme appears as `Framework 13 Pro`.
 - Orange-to-lavender active window border
 - Translucent Omarchy bar, menu, popup, notification, lock, and policy surfaces
 - Portable `Yaru-purple` file-manager icon selection
-- Original dark modular wallpaper and real desktop preview
+- Original dark modular wallpaper, three official Framework wallpapers, and a
+  real desktop preview
+- Framework-orange password-field focus styling for the Omarchy lock screen
 
 Omarchy generates configurations for supported terminals, editors, browsers,
 Hyprland, and shell components from `colors.toml` when the theme is activated.
@@ -45,21 +47,29 @@ window border, translucent surfaces, and included wallpaper on Omarchy 4.
 
 ![Framework 13 Pro desktop with Files, themed terminal, and notification](screenshots/shell-surfaces.png)
 
-## Official Framework Wallpapers
+## Included Framework Wallpapers
 
-Framework publishes wallpaper packs at
-[frame.work/wallpapers](https://frame.work/wallpapers). They are not bundled
-here because the downloads do not include an explicit redistribution license.
+The theme includes three images from Framework's official Laptop 13 Pro
+wallpaper pack. Because they live in `backgrounds/`, Omarchy installs them with
+the theme and makes them available in the background picker automatically.
 
-Recommended official options:
+| Included file | Original file | Theme fit |
+| --- | --- | --- |
+| `00-framework-gear-dark.png` | `FW 13 Pro Wallpaper 7.png` | Black code gear with orange details |
+| `04-framework-orange.png` | `FW 13 Pro Wallpaper 4.png` | Orange terminal artwork |
+| `06-framework-graphite.png` | `FW 13 Pro Wallpaper 6.png` | Black floating gear and terminal hand |
+
+The source pack is available from
+[Framework's wallpaper page](https://frame.work/wallpapers) or as the direct
+[Laptop 13 Pro wallpaper pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip).
+
+Framework publishes several other wallpaper packs that also pair well with the
+theme:
 
 | Wallpaper | Official download | Theme fit |
 | --- | --- | --- |
 | `FW 13 Wallpaper Dark.jpg` | [Laptop 13 pack](https://downloads.frame.work/assets/framework-laptop13-wallpaper-pack.zip) | Dark, nature-like purple and graphite dunes |
 | `FW 13 Wallpaper Light.jpg` | [Laptop 13 pack](https://downloads.frame.work/assets/framework-laptop13-wallpaper-pack.zip) | Orange and lavender daylight dunes |
-| `FW 13 Pro Wallpaper 7.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Black code gear with orange details |
-| `FW 13 Pro Wallpaper 6.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Black floating gear and terminal hand |
-| `FW 13 Pro Wallpaper 4.png` | [Laptop 13 Pro pack](https://downloads.frame.work/assets/framework-laptop13pro-wallpaper-pack.zip) | Orange terminal artwork |
 | `FW 16 Wallpaper 6.png` | [Laptop 16 pack](https://downloads.frame.work/assets/framework-laptop16-wallpaper-pack.zip) | Charcoal technical laptop drawing |
 | `FW12 Wallpaper Black.png` | [Legacy pack](https://downloads.frame.work/assets/framework-wallpaper-legacy-pack.zip) | Black hardware with orange accents |
 
@@ -69,7 +79,7 @@ After downloading your preferred images, place them in:
 ~/.config/omarchy/backgrounds/framework-13-pro/
 ```
 
-They will be available alongside the included background the next time the
+They will be available alongside the bundled backgrounds the next time the
 theme is selected.
 
 ## Optional Personalization
@@ -81,8 +91,30 @@ circular radius works well with the shell surfaces.
 
 The local development version uses custom lavender-and-orange folder icons and
 a branded unlock image. They are not distributed here because external icon
-themes cannot be installed portably by an Omarchy theme and Framework artwork
-is not included without redistribution permission.
+themes cannot be installed portably by an Omarchy theme, and the branded
+unlock image is not part of Framework's published wallpaper pack.
+
+## Optional Animated Login Screen
+
+The repository includes a native Qt/QML SDDM greeter under `extras/sddm/`.
+It reproduces the Aurora motion with the theme palette and an original modular
+center mark; the greeter itself does not embed Framework logos or wallpapers.
+
+SDDM is system-level configuration, so Omarchy deliberately does not install
+this add-on as part of `omarchy theme install` or `omarchy theme update`.
+Install or refresh it explicitly from a terminal:
+
+```bash
+sudo ~/.config/omarchy/themes/framework-13-pro/extras/sddm/install
+```
+
+The installer does not restart SDDM or end the active desktop session. The
+updated greeter appears after the next logout or reboot. After a future
+`omarchy theme update`, rerun the command above to copy the refreshed QML into
+SDDM's system theme directory.
+
+The lock-screen color remains a normal Omarchy theme update; only the animated
+login greeter needs this extra installation step.
 
 ## Compatibility
 
